@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIOviz</title>
+    <link rel="stylesheet" type="text/css" href="css/bioviz.css" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+</head>
+<body onload="startBtn(); progressive(); ">
+<div id="drop_box"><input onchange="handleFileSelect(evt);" type="file" id="files" name="file" />
+    <button onclick="abortRead();">Cancel read</button></div> 
+        <span class="readBytesButtons">
+			Read bytes:
+            <button onclick="startBtn()" data-startbyte="0" data-endbyte="49">1-50</button>
+            <button onclick="startBtn()" data-startbyte="50" data-endbyte="99">51-100</button>
+            <button onclick="startBtn()" data-startbyte="100" data-endbyte="149">101-150</button>
+            <button onclick="startBtn()">entire file</button>
+        </span>
+        
+        <div id="progress_bar"><div class="percent">0%</div></div>
+        <div id="byte_range" ></div>
+        <div id="count_div"></div>
+        <div id="result" >
+            <div id="left_div"></div>
+            <div id="seq_byte"></div>
+            <div id="graph">
+                <div id="graph_div"></div>
+                <div id="bubble_div"></div></div>
+            <div id="seq_id"></div>
+            <div id="mutseq_div"></div>
+            
+        </div>
+        
+        
+        
+        <script type="text/javascript" src="js/bioviz.js" charset="utf-8"></script>
+    
+</body>
+</html>

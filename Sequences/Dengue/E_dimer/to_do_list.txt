@@ -1,0 +1,16 @@
+Dec 25 2016
+
+The file dengue_Edimer_aligned.fasta contains sequences of dengue virus' Envelope protein which exists as a dimer. 
+
+Description of file:
+Use text viewer to open this file.
+The line starting with '>' is called a header (or name of the sequence).
+The following lines untill there is another '>' is called the sequence. eg.: MRCI... WFKK
+To know more about the file format, refer this: https://en.wikipedia.org/wiki/FASTA_format
+If you carefully notice, there are 124 headers with their corresponding sequences.
+
+To get a better sense of the file in a matrix form, it can also be visualized graphically:
+Install ClustalW/X from http://www.clustal.org/clustal2/
+Open the file and you will notice that sequences are displayed in a matrix form. 
+Again, each row represents a sequence, whereas each column represents a position number in the sequences. 
+Try to think of it as a matrix to develop own analysis / visualization programs. Most of the visualization analysis will be performed on the column data.
