@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Bio Visualization</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+
+		<style>
+			#body {
+				font-family: "Lato", sans-serif;
+				margin-top: 43px;
+				margin-left: 0px;
+				margin-right: 5px;
+				margin-bottom: 0px;
+				
+			}
+
+			.sidenav {
+				height: 100%;
+				width:20%;
+				padding-top: 50px;
+				position: fixed;
+				background-color: #101010;
+				overflow-x: auto;
+				transition: 0.5s;
+				margin-left: -22px;
+			}
+
+			.sidenav a {
+				padding: 8px 8px 8px 12px;
+				font-size: 25px;
+				color: #818181;
+				display: block;
+				transition: 0.3s
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+				position: absolute; 
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+			
+			#content {
+				float: right;
+				background-color: white;
+				width: 80%;
+				height:525px;
+				margin-top: -35px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: auto;
+			}
+			#hframe{
+				width: 100%;
+				height: 545px;
+				border : 0;
+			}
+
+			h4{
+				color: gray;
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+		</style>
+
+		
+
+		<body>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">ProMuVis</a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="home.html" target="iframe">Home</a></li>
+							<li><a href="viruses.html" target="iframe">Viruses</a></li>
+						</ul>
+	
+					<form class="navbar-form navbar-right">
+						<div class="input-group">
+							<form id="search" method="get" action="http://www.google.com">
+							<input type="text" class="form-control" placeholder="Search"></form>
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</div>
+						</div> 
+					</form>
+	
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="about.html" target="iframe">About</a></li>
+						<li><a href="contact.html" target="iframe"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div id = "body">
+				<iframe id="hframe" name="iframe" src="home.html"></iframe>
+			</div> 
+						
+			<nav class="navbar navbar-inverse navbar-fixed-bottom">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<h4 align="center">© Copyright 2017</h4>
+					</div>
+				</div>
+			</nav>
+		</body>
+	</html>
+
