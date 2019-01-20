@@ -5,6 +5,8 @@ Want to clean up the gloal dependencies:
 Create a new virtualenv:
   virtualenv venv
     venv is used as the name of the virtualenv, but any name can be used.
+Virtual environment will not inherit any packages from your “global” site-packages directory:
+  virtualenv --no-site-packages venv
 Activate the virtualenv:
   source venv/bin/activate
 Deactivate the virtualenv, run:
