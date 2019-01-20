@@ -1,0 +1,19 @@
+check and output all installed 3rd party packages:
+  pip freeze
+Want to clean up the gloal dependencies:
+  pip freeze | xargs pip uninstall -y
+Create a new virtualenv:
+  virtualenv venv
+    venv is used as the name of the virtualenv, but any name can be used.
+Activate the virtualenv:
+  source venv/bin/activate
+Deactivate the virtualenv, run:
+  deactivate
+Include global Python packages when creating a virtualenv
+  virtualenv --system-site-packages venv
+Delete a virtualenv:
+  rm -rf venv
+Store copy of Python package versions:
+  pip freeze > requirements.txt
+Install all packages from requirements.txt
+  pip install -r requirements.txt
